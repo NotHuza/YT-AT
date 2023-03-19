@@ -9,7 +9,7 @@ on:
       DEVICE:
         description: 'Select device'
         required: false
-        default: 'all'
+        default: 'armeabi-v7a'
         type: choice
         options:
           - armeabi-v7a
