@@ -146,9 +146,6 @@ ach="x86"
 elif [ "$DEVICE" == "x86_64" ];then
 lib="lib/x86/* lib/arm64-v8a/* lib/armeabi-v7a/*"
 ach="x64"
-if [ "$DEVICE" == "all" ];then
-lib=""
-ach="arm arm64 x64 x86"
 else
 lib="lib/arm64-v8a/* lib/x86/* lib/x86_64/*"
 ach="arm"
@@ -164,6 +161,7 @@ unzip -qo "$Likk/lib/YouTube.apk" lib/$DEVICE/* -d $Likk/Tav
 [ "$ICONS" == 'true' ] && echo -n "-e custom-branding " >> $Likk/logk
 [ "$SHORTS" == 'true' ] && echo -n "-e hide-shorts-button " >> $Likk/logk
 [ "$CREATE" == 'true' ] && echo -n "-e disable-create-button " >> $Likk/logk
+[ "$PREMIUM" == 'true' ] && echo -n "-e premium-heading " >> $Likk/logk
 [ "$TYPE" != 'true' ] && lib='lib/*/*'
 
 zip -qr $Likk/lib/YouTube.apk -d $lib
