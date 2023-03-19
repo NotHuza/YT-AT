@@ -30,22 +30,23 @@ on:
         description: 'Original icon & Name'
         required: false
         type: boolean
-        default: true
+        default: false
       OPTIMIZATION:
         description: 'Video loaded speed'
         required: false
         type: boolean
-        default: true
+        default: false
       SHORTS:
         description: 'Show button shorts video'
         required: false
         type: boolean
-        default: true
+        default: false
       ROUND:
         description: 'Pip rounded (root)'
         required: false
         type: boolean
-        default: true
+        default: false
+        
 jobs:
   build1:
     name: 'NO ROOT...'
