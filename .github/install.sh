@@ -146,6 +146,9 @@ ach="x86"
 elif [ "$DEVICE" == "x86_64" ];then
 lib="lib/x86/* lib/arm64-v8a/* lib/armeabi-v7a/*"
 ach="x64"
+if [ "$DEVICE" == "all" ];then
+lib=""
+ach="arm arm64 x64 x86"
 else
 lib="lib/arm64-v8a/* lib/x86/* lib/x86_64/*"
 ach="arm"
