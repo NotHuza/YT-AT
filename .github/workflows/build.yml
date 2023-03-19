@@ -16,6 +16,7 @@ on:
           - arm64-v8a
           - x86
           - x86_64
+          - all
       FEATURE:
         description: 'Turn off the feature, Add spaces to distinguish each feature'
         required: false
