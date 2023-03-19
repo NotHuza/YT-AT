@@ -9,7 +9,7 @@ on:
       DEVICE:
         description: 'Select device'
         required: false
-        default: 'arm64-v8a'
+        default: 'all'
         type: choice
         options:
           - armeabi-v7a
@@ -24,17 +24,17 @@ on:
         description: 'Original icon & Name'
         required: false
         type: boolean
-        default: true
+
       SHORTS:
         description: 'Show button shorts video'
         required: false
         type: boolean
-        default: true
+        default: false 
       ROUND:
         description: 'Pip rounded (root)'
         required: false
         type: boolean
-        default: true
+        default: false 
 permissions: write-all
 jobs:
   build1:
