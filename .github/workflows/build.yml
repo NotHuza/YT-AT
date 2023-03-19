@@ -36,6 +36,11 @@ on:
         required: false
         type: boolean
         default: false 
+      PREMIUM:
+        description: 'not show client as premium'
+        type: boolean
+        default: false 
+        
 permissions: write-all
 jobs:
   build1:
